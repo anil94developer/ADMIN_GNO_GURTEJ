@@ -27,7 +27,9 @@ export default function DashboardPage() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    api.get('/admin/dashboard').then(({ data: res }) => setData(res));
+    api.get('/admin/dashboard')
+      .then(({ data: res }) => setData(res))
+      .catch(() => setData({ stats: {}, recentDonations: [], recentQueries: [] }));
   }, []);
 
   if (!data) return <Box py={8} textAlign="center">Loading dashboard...</Box>;
