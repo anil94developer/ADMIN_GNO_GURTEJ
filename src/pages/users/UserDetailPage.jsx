@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
-  Card, CardContent, Grid, Typography, Chip, Button, Stack, Divider, Table, TableBody, TableCell, TableRow, CircularProgress,
+  Card, CardContent, Grid, Typography, Chip, Button, Stack, Divider, Table, TableBody, TableCell, TableRow, CircularProgress, Box,
 } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import LockIcon from '@mui/icons-material/Lock';
